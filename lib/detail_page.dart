@@ -118,7 +118,7 @@ class DetailPage extends StatelessWidget {
         child: RaisedButton(
           onPressed: () => {
             Fluttertoast.showToast(
-                msg: "Learn More Chapter",
+                msg: "Learn More\n"+data.judul,
                 toastLength: Toast.LENGTH_SHORT,
                 gravity: ToastGravity.BOTTOM,
                 backgroundColor: Colors.blue,

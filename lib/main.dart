@@ -46,7 +46,7 @@ class _ListPageState extends State<ListPage> {
             decoration: const BoxDecoration(
                 border: Border(
                     right: BorderSide(width: 1.0, color: Colors.white24))),
-            child: const Icon(Icons.book, color: Colors.white),
+            child: const Icon(Icons.article_sharp, color: Colors.white),
           ),
           title: Text(
             datas.judul,
@@ -80,12 +80,12 @@ class _ListPageState extends State<ListPage> {
           },
         );
 
-    Card makeCard(Data lesson) => Card(
+    Card makeCard(Data datas) => Card(
           elevation: 8.0,
           margin: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 6.0),
           child: Container(
             decoration: const BoxDecoration(color: Colors.indigo),
-            child: makeListTile(lesson),
+            child: makeListTile(datas),
           ),
         );
 
@@ -123,7 +123,7 @@ List getDatas() {
     Data(
         judul: "Start With basic",
         level: "Beginner",
-        progress: 0.97,
+        progress: 1,
         harga: 0,
         deskripsi:
             "Dart is a wide language and will take time to master. Before jumping to apps, one should at least learn the basics of the Dart language. If you already know Java, the transition from Java to Dart will be pretty easy! Don’t directly jump to Flutter without knowing Dart"),
@@ -158,8 +158,8 @@ List getDatas() {
     Data(
         judul: "Learn Project Structure",
         level: "Advanced",
-        progress: 0.10,
-        harga: 50,
+        progress: 0.60,
+        harga: 78,
         deskripsi:
             "Maintaining a Project Structure is really important. It helps newbies to review the code quickly. It also helps to trace the bug easily or add or remove functionality as and when needed without breaking the current functionality. There are many predefined Architectures available like MVVM, MVC, TDD, etc."),
    ];

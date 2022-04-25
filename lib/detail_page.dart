@@ -16,12 +16,12 @@ class DetailPage extends StatelessWidget {
         valueColor: const AlwaysStoppedAnimation(Colors.lightBlueAccent));
 
     final coursePrice = Container(
-      padding: const EdgeInsets.all(5.0),
+      padding: const EdgeInsets.all(3.5),
       decoration: BoxDecoration(
           border: Border.all(color: Colors.white),
           borderRadius: BorderRadius.circular(5.0)),
       child: Text(
-        "Rp " + data.harga.toString(),
+        " Rp " + data.harga.toString(),
         style: const TextStyle(color: Colors.white),
       ),
     );
@@ -31,7 +31,7 @@ class DetailPage extends StatelessWidget {
       children: <Widget>[
         const SizedBox(height: 50.0),
         const Icon(
-          Icons.flag,
+          Icons.account_tree,
           color: Colors.white,
           size: 40.0,
         ),
